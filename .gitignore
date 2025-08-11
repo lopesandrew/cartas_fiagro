@@ -1,0 +1,6 @@
+# venv / dados
+.venv/
+__pycache__/
+data/raw/
+*.parquet
+*.zip

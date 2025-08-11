@@ -1,0 +1,30 @@
+# Catálogo declarativo de páginas onde as cartas são publicadas.
+# Adicione/ajuste conforme necessário. Para cada alvo, informe a URL onde
+# a gestora/ticker normalmente publica as cartas/relatórios.
+targets:
+  - name: "exemplo_riza"
+    manager: "Riza"
+    ticker: "RZTR11"
+    base_url: "https://www.riza.com.br"
+    cartas_url: "https://www.riza.com.br/materiais/"   # ajuste para a página de materiais/cartas
+    include_regex: "(?i)carta|mensal|relat[oó]rio"
+    exclude_regex: "(?i)formulario|lâmina|lâmina|regulamento"
+    js_render: false
+
+  - name: "exemplo_xp"
+    manager: "XP"
+    ticker: "XPCI11"
+    base_url: "https://conteudos.xpi.com.br"
+    cartas_url: "https://conteudos.xpi.com.br/fundos-imobiliarios/relatorios/"
+    include_regex: "(?i)fiagro|carta|mensal"
+    exclude_regex: null
+    js_render: false
+
+  - name: "exemplo_ativ"
+    manager: "Ativa"
+    ticker: "BTRA11"
+    base_url: "https://www.ativainvestimentos.com.br"
+    cartas_url: "https://www.ativainvestimentos.com.br/fundos/fiagro/relatorios"
+    include_regex: "(?i)carta|mensal|relatorio"
+    exclude_regex: null
+    js_render: false
